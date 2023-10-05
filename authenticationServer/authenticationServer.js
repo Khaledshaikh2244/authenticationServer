@@ -24,7 +24,7 @@ app.post('./signup' , (req , res) =>{
     }
     else{
         users[i].push(users);
-        res.sendStatus(201).send("SignupSuccesfully");
+        res.sendStatus(201).send("Signup Succesfully");
     }
 }
 )
@@ -49,7 +49,7 @@ for (var i =0 ; i < users.length ; i++) {
      res.sendStatus(201).send("ok");
   }
   else {
-    res.sendStatus(401).send("Unauthorized");
+    res.sendStatus(401).send("Unauthorized request !");
   }
 })
 
